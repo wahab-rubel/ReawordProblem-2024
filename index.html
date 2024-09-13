@@ -8,25 +8,41 @@
 </head>
 <body>
   
-
 <button onclick="myFunction()">Try if</button>
-<p id="points"></p>
+<p id="points" id="demo">This is value</p>
 
 
 
   <script>
-    const points = [40, 100, 1, 5, 25, 10];
-    document.getElementById("points").innerHTML = points;
+  // const numbers1 = [5, 2, 5, 1, 6, 8, 7, 9];
+  // const numbers2 = numbers1.map(myFunction);
+  // document.getElementById("points").innerHTML = numbers2;
+
+  // function myFunction(value, index, array){
+  // return value * 10;
+  // }
+
+  // const myArr = [1, 2, 3, 4, 5,6];
+  // const newArr = myArr.flatMap(x => [x, x * 10]);
+  // document.getElementById("points").innerHTML = newArr;
+
+
+  // const numbers = [45, 4, 9, 16, 25];
+  // let sum = numbers.reduceRight(myFunction);
+  // document.getElementById("points").innerHTML = sum;
+  // function myFunction(total, value){
+  //   return total + value;
+  // }
   
-  function myFunction(){
-    for( let i = points.length -1; i >0; i--){
-    let j = Math.floor(Math.random() * (i+1));
-    let k = points[i];
-    points[i] = points[j];
-    points[j] = k;
-  }
-  document.getElementById("points").innerHTML = points;
-  }
+
+// const numbers = [45, 41, 91, 16, 25];
+// let allOver18 = numbers.every(myFunction);
+// document.getElementById("points").innerHTML = allOver18;
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
   </script>
 </body>
 </html>

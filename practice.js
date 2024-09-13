@@ -49,17 +49,56 @@
 // let point = points.sort(function(){return 0.5 - Math.random()});
 // console.log(point);
 
-const points = [40, 100, 1, 5, 25, 10];
+// const points = [40, 100, 1, 5, 25, 10];
 
-function myArrayMax(arr){
-  let len = points.length;
-  let max = -Infinity;
-  while (len--) {
-    if (arr[len] > max) {
-      max = arr[len];
+// function myArrayMax(arr){
+//   let len = points.length;
+//   let max = -Infinity;
+//   while (len--) {
+//     if (arr[len] > max) {
+//       max = arr[len];
+//     }
+//   }
+//   return max;
+// }
+// const result = myArrayMax("points");
+// console.log(result);
+
+// const car = [
+//   {name: 'volbo', year: 2011},
+//   {name: 'saab', year: 2001},
+//   {name: 'BMW', year: 2010}
+// ]
+
+// function myFunction() {
+//   let x = a.type.toLowerCase();
+//   let y = b.type.toLowerCase();
+//   if (x < y) {rety}
+// }
+
+// const numbers1 = [45, 4, 9, 16, 25];
+// const numbers2 = numbers1.map(myFunction);
+
+
+const student = {
+  name: "wahab",
+  id: 15242,
+  isSingle: true,
+  friend:['apu', 'chopu', 'kopu', 'salman'],
+  movies: [{name: 'no 1', year: 2011}, {name: 'no 1', year: 2051}, {name:'no 1', year: 2020}],
+  act: function(){
+    console.log('act king khan shakib khan')
+  },
+  car: {
+    brand: 'tesla',
+    price: 50000000,
+    made: 2025,
+    manufacture: {
+      name: 'tesla',
+      ceo: 'Elon Mask',
+
     }
   }
-  return max;
 }
-const result = myArrayMax("points");
-console.log(result);
+console.log(student.act);
+student.act();
