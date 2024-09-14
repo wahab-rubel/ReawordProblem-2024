@@ -9,7 +9,7 @@
 <body>
   
 <button onclick="myFunction()">Try if</button>
-<p id="points" id="demo">This is value</p>
+<p id="points">This is value</p>
 
 
 
@@ -43,6 +43,42 @@
 //   return value > 18;
 // }
 
+// const numbers = [45, 4, 9, 16, 25];
+// let someOver18 = numbers.some(myFunction);
+// document.getElementById("points").innerHTML =  " oll over 18 plus " + someOver18;
+
+// function myFunction(value) {
+//   return value > 18;
+// }
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.keys();
+
+// let text = "";
+// for (let x of keys) {
+//   text += x + "<br>";
+// }
+// document.getElementById("points").innerHTML = text;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "katar", "Banana", "Orange", "Apple"];
+// const f = fruits.entries();
+
+// for (let x of f) {
+//   document.getElementById("points").innerHTML += x + "<br>";
+// }
+
+// const months = ["Banana", "Orange", "Apple", "Mango", "katar", "Banana"];
+// const myMonths = months.with(2, "March");
+// document.getElementById("points").innerHTML = myMonths;
+
+
+document.getElementById("points").innerHTML = 
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"Even the string 'false' is " + Boolean('false') + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
   </script>
 </body>
 </html>
